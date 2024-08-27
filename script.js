@@ -61,8 +61,8 @@ var tasksTable = document.getElementById('tasksTable');
                     <td>${task.date}</td>
                     <td><input onchange="changeIsDone(this, ${i})" type="checkbox" ${checkedHtml}></td>
                     <td>
-                    <button onclick="deleteTask(${i})">Slett</button>
-                    <button onclick="editTask(${i})">Endre</button>
+                    <button class="bi bi-trash" onclick="deleteTask(${i})"></button>
+                    <button class="bi bi-pen" onclick="editTask(${i})"></button>
                     </td>
                     </tr>`;
                     
